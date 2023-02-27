@@ -4,7 +4,7 @@
 
 function willYou(young, beautiful, loved) {
   const arr = [young, beautiful];
-  return loved === true && arr.includes(false);
+  return (loved === true && arr.includes(false)) || (loved === false && !arr.includes(false));
 }
 
 // Example
