@@ -2,9 +2,7 @@
 // the same direction after directions are given to turn
 
 function lineup(commands) {
-  let count = 0;
-  let num = 1;
-  let other = 1;
+  let [count, num, other] = [0, 1, 1];
   for (let i = 0; i < commands.length; i++) {
     if (commands[i] === 'A') {
       num = num + 0.5;
